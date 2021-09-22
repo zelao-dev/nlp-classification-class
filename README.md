@@ -1,5 +1,6 @@
-Meu código python é o jose.py está em nlp-classification-class/datasets/bugs/apache/jose.py
-Resultados estão logo abaixo neste README e também na pasta nlp-classification-class/datasets/bugs/apache/apache.
+<h2>Meu código python é o jose.py está em nlp-classification-class/datasets/bugs/apache/jose.py</h2>
+
+<h2>Resultados estão logo abaixo neste README e também na pasta nlp-classification-class/datasets/bugs/apache/apache.</h2>
 
 Tarefa
 ======
