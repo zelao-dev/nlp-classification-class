@@ -70,7 +70,15 @@ results = classifier.score(X_test, y_test)
 final.append({'algorithm:': classifier.estimator, 'best_params': classifier.best_params_, 'best_score': classifier.score(X_test, y_test)})
 #final.append(classifier.score(X_test, y_test))
 print(final)
-#
+
+# SVC
+svc = SVC()
+parameters = {'C': [0.1,1, 10, 100], 'gamma': [1,0.1,0.01,0.001],'kernel': ['rbf', 'poly', 'sigmoid']}
+classifier = GridSearchCV(svc, parameters, cv=10)
+classifier.fit(X_train, y_train)
+results = classifier.score(X_test, y_test)
+
+final.append({'algorithm:': classifier.estimator, 'best_params': classifier.best_params_, 'best_score': classifier.score(X_test, y_test)})
 
 # Random Forest
 random = RandomForestClassifier()
